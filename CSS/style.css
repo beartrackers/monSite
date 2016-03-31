@@ -1,0 +1,277 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Roboto', sans-serif;
+	font-weight: normal;
+}
+/*----------------------------------------
+HELPER
+------------------------------------------*/
+.unstyled-list{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.text-center{
+	text-align: center;
+}
+.image_responsive{
+	width:100%;
+}
+/*----------------------------------------
+GRID
+------------------------------------------*/
+.row{
+	float:left;
+	margin:0 40px;
+}
+.col{
+	float:left;
+	padding:0 15px;
+}
+.col-1{
+	width:100%;
+}
+.col-2{
+	width:50%;
+}
+.col-2-3{
+	width:66.666%;
+}
+.col-3{
+	width:33.333%;
+}
+/*----------------------------------------
+side bar
+------------------------------------------*/
+.side-menu{ 
+	width: 100px;
+	background:#EaEaEa;
+	position:fixed;
+	z-index: 1;
+	height: 100%;
+}
+.side-menu a{
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.main-menu{
+	position: relative;
+	transform:rotate(270deg);
+	top:90px;
+}
+.logo{
+	display:block;
+	position:relative;
+	top:30px;
+}
+.main-menu ul {
+	display:flex;
+	flex-direction: row-reverse;
+}
+.main-menu ul li {
+	margin : 0 10px;
+}
+.social-menu{
+	position:absolute;
+	bottom:30px;
+	font-size: 30px;
+	width:100%;
+}
+/*----------------------------------------------------
+main content
+------------------------------------------------*/
+
+.main-content{
+	
+	padding-left:100px;
+}
+.section{
+	background: #333;
+	color:#fff;
+}
+.section a{
+	color:#E15D0E;
+	text-decoration:none;
+}
+.section a:hover{
+	text-decoration: underline;
+}
+.underlined-title:after{
+	content: "";
+	display: block;
+	background:white;
+	width:25px;
+	height:2px;
+	margin-top:2px;
+}
+h2{
+	text-transform:uppercase;
+	font-weight: 700;
+}
+h3{
+	width:66.6666%;
+	margin:30px 0;
+	font-size:23px;
+}
+h4{
+	margin-top: 0;
+	font-size:18px;
+	font-weight:700;
+	letter-spacing: 1px;
+}
+#section-home{
+	background-image: linear-gradient(rgba(0,0,0, .7), rgba(35,35,30, .3)), url(../images/photo-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+        
+}
+.main-quotation{margin: 0 30%;}
+.main-quotation p {font-size:30px;
+margin-bottom: 10px;}
+.main-quotation footer{
+	text-align: right;
+	font-style: italic;
+}
+.section .btn-primary{
+	padding: 10px 20px;
+	background: #E15D0E;
+	color:white;
+	text-decoration: none;
+	border-radius:4px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.section .btn-primary:hover{
+	background: #B64C0C;
+	text-decoration: none;
+}
+
+
+.slider{
+	width:800px;
+}
+
+.slider-wrapper{
+	overflow: hidden;
+}
+
+.slick-dots{
+	list-style:none;
+	margin: 20px 0 ;
+	padding: 0;
+	text-align: center;
+
+}
+
+.slick-dots li{
+	display: inline-block;
+	margin-right: 5px;
+}
+.slick-dots li button{
+	
+	font-size:0;
+	display: inline-block;
+	background: #783309;
+	padding:5px;
+	border: none;
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button{
+	background:#E15D0E ;
+}
+.btn-toggle-menu{display: none;}
+@media screen and (min-width: 1507px){
+	.slider{ 
+		width:800px;
+		
+	}
+}
+@media screen and (max-width: 1506px){
+	.slider{
+		width:600px;
+		
+	}
+}
+@media screen and (max-width: 1024px){
+	.slider{
+		width:400px;
+	}
+}
+@media screen and (max-width:600px) {
+	.side-menu{
+		height:60px;
+		width:100%;
+	}
+	.logo{
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+		top:10px;
+	}
+	.main-menu{
+		transform: none;
+		margin-top: 15px;
+		position: relative;
+		width:100%;
+		top:0;
+		float:left;
+	}
+	.main-menu ul{
+		display: block;
+		background:rgba(0,0,0,0.5);
+		
+	}
+
+	.main-content{
+		padding-left:0;
+	}
+	.social-menu{
+		display: none;
+	}
+	.side-menu a{
+		color: white;
+		display: block;
+	}
+	.hide-menu{
+		display: none;
+	}	
+	.btn-toggle-menu{
+		display: block;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		padding: 10px 20px;
+		cursor: pointer;
+		font-size: 21px;
+	}
+	.main-quotation {
+	    margin: 0 20%;
+	}
+	.main-quotation p {
+    	font-size: 20px;
+	}
+	
+	.col-2-3 { width: 100%; }
+	.col-3 { width: 100%; }
+
+	.section.fp-section, .section .fp-tableCell {
+	    padding-top: 50px;
+	}
+}
+@media (max-width: 600px){
+    .section.fp-section,
+    .section .fp-tableCell{
+        height: auto !important;
+        min-height: 100%;
+    }
+}
