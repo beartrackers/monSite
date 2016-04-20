@@ -127,7 +127,7 @@ h4{
 	letter-spacing: 1px;
 }
 #section-home{
-	background-image: linear-gradient(rgba(0,0,0, .7), rgba(35,35,30, .3)), url(../images/photo-background.jpg);
+	background-image: linear-gradient(rgba(0,0,0, .7), rgba(35,35,30, .3)), url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

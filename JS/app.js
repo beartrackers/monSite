@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('#fullpage').fullpage({
         anchors:['home','about', 'work','contact'],
-        keyboardScrolling: false,
+        keyboardScrolling: true,
         scrollOverflow: true,
         onLeave : function(){
             $(".main-menu").addClass("hide-menu");
